@@ -1,0 +1,44 @@
+{
+  "name": "Dollar-com",
+  "version": "0.1.0",
+  "description": "It's a secret.",
+  "contributors": [
+    "muit @muitxer <miguel_3c@hotmail.com>"
+  ],
+  "license": "GPL",
+  "scripts": {
+    "start": "node bin/index.js",
+    "test": "node_modules/.bin/mocha"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": ">= 1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixeldream/clipjump.git"
+  },
+  "bugs": {
+    "url": "",
+    "email": "miguel_3c@hotmail.com"
+  },
+  "dependencies": {
+    "serve-me": "0.6.1-c",
+    "socket.io": "^1.2.1"
+  },
+  "devDependencies": {
+    "gulp": "3.8.10",
+    "gulp-coffee": "*",
+    "gulp-concat": "*",
+    "gulp-connect": "*",
+    "gulp-header": "*",
+    "gulp-jasmine": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "socket.io": "1.2.1",
+    "redis": "0.12.1",
+    "nohm": "0.9.6"
+  },
+  "private": false,
+  "subdomain": "clipjump"
+}
