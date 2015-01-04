@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Dollars</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/css/bootstrap.css" media="screen">
     <link rel="stylesheet" href="./assets/css/bootswatch.min.css">
@@ -25,14 +25,19 @@
           <div class="input-group">
             <input class="form-control " id="username" type="text" placeholder="..." name="username">
             <span class="input-group-btn">
-              <button class="btn btn-white" type="submit">Next</button>
+              <button id="login_next" class="btn btn-white" type="submit">Next</button>
             </span>
           </div>
         </div>
 
         <div id="password_container" style="display:none;">
           <label>Password:</label>
-          <input class="form-control " id="password" type="password" placeholder="..." name="password">
+          <div class="input-group">
+            <input class="form-control " id="password" type="password" placeholder="..." name="password">
+            <span class="input-group-btn">
+              <button id="login_submit" class="btn btn-white" type="submit">Log In</button>
+            </span>
+          </div>
         </div>
 
         <div id="registry_container" style="display:none;">

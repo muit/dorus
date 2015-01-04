@@ -1,4 +1,7 @@
 class Dollars.Login
+  @next: =>
+    @username =
+
   @login: (username, password, success, error)->
     $.get "./login/", {username: username, password: password}, (data)=>
       if data == "logged in"
