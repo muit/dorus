@@ -42,7 +42,7 @@ gulp.task('client', function()
   gulp.src(source.client)
     .pipe(concat(pkg.name.toLowerCase() +'.coffee'))
     .pipe(coffee().on('error', gutil.log))
-    .pipe(uglify({mangle: false}))//Comment this to debug
+    //.pipe(uglify({mangle: false}))//Comment this to debug
     .pipe(gulp.dest(assets+"/js"))
     .pipe(connect.reload());
 });

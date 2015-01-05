@@ -19,13 +19,14 @@ class Core
 
     @http_server.start port
 
-    #Redis Connection
+    ###Redis Connection
     @redisdb = Redis.createClient Config.redis.port, Config.redis.url
     @redisdb.auth Config.redis.auth, (err) =>
       if err
         throw err
         return
       #You are now connected to your redis.
+    ###
 
 
 

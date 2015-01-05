@@ -1,6 +1,21 @@
 class Dollars.Login
-  @next: =>
-    @username =
+  @load: ->
+    self = this
+    $("#username").focus()
+    $("#username").keydown (e)=>
+      if e.keyCode == 13
+        self.next()
+    $("#login_next").keydown ()=>
+      self.next()
+    $("#username_container").submit ()=>
+      self.next()
+
+  @next: ->
+    @username = window.username.value
+    if @username != ""
+      @hide "username"
+      @show "password"
+      $("#password").focus()
 
   @login: (username, password, success, error)->
     $.get "./login/", {username: username, password: password}, (data)=>

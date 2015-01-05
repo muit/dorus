@@ -6,3 +6,4 @@ Dollars.log = (message)->
 
 Dollars.load = ->
   Dollars.Chat.load()
+  Dollars.Login.load()
