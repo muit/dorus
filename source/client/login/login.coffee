@@ -5,7 +5,7 @@ class Dollars.Login
     $("#username").keydown (e)=>
       if e.keyCode == 13
         self.next()
-    $("#login_next").keydown ()=>
+    $("#login_next").click ()=>
       self.next()
     $("#username_container").submit ()=>
       self.next()

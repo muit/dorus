@@ -48,7 +48,7 @@
           }
         };
       })(this));
-      $("#login_next").keydown((function(_this) {
+      $("#login_next").click((function(_this) {
         return function() {
           return self.next();
         };
