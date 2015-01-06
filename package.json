@@ -23,7 +23,7 @@
     "email": "miguel_3c@hotmail.com"
   },
   "dependencies": {
-    "serve-me": "0.6.2",
+    "serve-me": "0.6.3",
     "socket.io": "^1.2.1"
   },
   "devDependencies": {
