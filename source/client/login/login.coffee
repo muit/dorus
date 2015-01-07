@@ -17,12 +17,15 @@ class Dollars.Login
       @show "password"
       $("#password").focus()
 
+
+
   @login: (username, password, success, error)->
-    $.get "./login/", {username: username, password: password}, (data)=>
-      if data == "logged in"
-        success()
+    $.get "./session", {username: username, password: password}, (data)=>
+      console.log data
+      if data == "logged in" || data == "logged again"
+        if success then success()
       else
-        error()
+        if error then error()
 
 
   @hide: (name, callback)->

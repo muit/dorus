@@ -14,7 +14,6 @@ class Core
     Config.server.debug = if attr.env == "production" then false else true
 
     @http_server = SM Config.server
-
     @login = new Core.Login this
 
     @http_server.start port

@@ -1,0 +1,249 @@
+.container-fixed {
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.container-fixed .col {
+  height: 100%;
+  overflow: auto;
+}
+
+.row-xs-12 { height: 100%; }
+.row-xs-11 { height: 91.66666666666666%; }
+.row-xs-10 { height: 83.33333333333334%; }
+.row-xs-9 { height: 75%; }
+.row-xs-8 { height: 66.66666666666666%; }
+.row-xs-7 { height: 58.333333333333336%; }
+.row-xs-6 { height: 50%; }
+.row-xs-5 { height: 41.66666666666667%;}
+.row-xs-4 { height: 33.33333333333333%;}
+.row-xs-3 { height: 25%; }
+.row-xs-2 { height: 16.666666666666664%; }
+.row-xs-1 { height: 8.333333333333332%; }
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+  page-break-inside: avoid;
+  max-height: 100% !important;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.center{
+  margin: 0 auto;
+}
+
+
+/*Chat CSS*/
+.bubble
+{
+position: relative;
+width: 255px;
+height: 50px;
+padding: 0px;
+background: #E2A72D;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+border: #fff solid 3px;
+}
+
+.bubble:after
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 6px 16px 6px 0;
+border-color: transparent #E2A72D;
+display: block;
+width: 0;
+z-index: 1;
+margin-top: -6px;
+left: -16px;
+top: 40%;
+}
+
+.bubble:before
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 8px 18px 8px 0;
+border-color: transparent #fff;
+display: block;
+width: 0;
+z-index: 0;
+margin-top: -8px;
+left: -21px;
+top: 40%;
+}
+
+.bubble.up
+{
+
+}
+
+.bubble.down
+{
+
+}
+
+
+#message {
+  text-align: center;
+}
+
+  #message .messageInput {
+    clear:both;
+  }
+
+    #message .messageInput .user {
+      float: left;
+      width: 90px;
+    }
+
+      #message .messageInput .userName {
+        overflow: hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+        font-size: 13px;
+      }
+
+    #message .messageInput textarea {
+      width: 470px;
+      height: 3em;
+      font-size: 16px;
+      letter-spacing: 1px;
+      padding: 10px;
+      margin: 0 10px;
+  /*    margin: 0 0 0 90px;
+      *margin-left: 55px;
+  */
+      border: 1px #ccc solid;
+      overflow-y: hidden;
+      outline: none;
+    }
+
+  #message div.submit input {
+    display:block;
+    border: 0;
+    margin: 5px 180px;
+    height: 25px;
+    width: 200px;
+    font-size: 12px;
+    font-family: "lucida grande","Meiryo",tahoma,verdana,arial,sans-serif;
+    color: #201e1a;
+    font-weight: bold;
+      background: transparent url('submit.gif') 0px 0px no-repeat;
+  }
+
+  #message div.submit input:active {
+      background: transparent url('submit.gif') 0px 1px no-repeat;
+  }
+
+#talks {
+  margin-top: 175px;
+  _margin-top: 40px;
+}
+
+#talks div.system {
+  margin: 10px 0 10px 20px;
+  letter-spacing: 3px;
+  clear: left;
+}
+
+dl.talk {
+  clear: both;
+  min-height: 80px;
+  margin-top: 10px;
+}
+
+  dl.talk dt {
+    min-height: 20px;
+    width: 90px;
+    padding-top: 58px;
+    padding-bottom: 10px;
+    text-align: center;
+    display: block;
+    line-height: 20px;
+    float: left;
+    background: transparent url('icon/setton.png') no-repeat center top;
+  }
+
+  dl.talk dt.select {
+    border: 2px solid #ff6600;
+  }
+
+  dl.talk dd {
+    display: inline-block;
+    max-width: 510px;
+  }
+
+  dl.talk dd div.bubble p.body {
+    float: left;
+    clear: left;
+    padding: 15px 20px;
+    border-radius: 13px;
+    border: 4px #fff solid;
+    -moz-border-radius: 13px;
+    -webkit-border-radius: 13px;
+    background: transparent url('balloon/gray.png') repeat-x left center;
+    font: 1em "lucida grande","Meiryo",tahoma,verdana,arial,sans-serif;
+    letter-spacing: 3px;
+    color: white;
+    -position: relative;
+  }
+
+  /* !begin icon styles */
+  #talks .tanaka  { background-image: url('icon/tanaka.png'); }
+  #talks .kanra   { background-image: url('icon/kanra.png'); }
+  #talks .setton  { background-image: url('icon/setton.png'); }
+  #talks .saika   { background-image: url('icon/saika.png'); }
+  #talks .bakyura { background-image: url('icon/bakyura.png'); }
+  #talks .gg      { background-image: url('icon/gg.png'); }
+  #talks .zawa    { background-image: url('icon/zawa.png'); }
+  #talks .simon   { background-image: url('icon/simon.png'); }
+  #talks .koukin  { background-image: url('icon/koukin.png'); }
+  #talks .shinra  { background-image: url('icon/shinra.png'); }
+  #talks .sizuo   { background-image: url('icon/sizuo.png'); }
+  #talks .izaya   { background-image: url('icon/izaya.png'); }
+  #talks .chinese { background-image: url('icon/chinese.png'); }
+  #talks .lady    { background-image: url('icon/lady.png'); }
+  #talks .lolita  { background-image: url('icon/lolita.png'); }
+  #talks .woman   { background-image: url('icon/woman.png'); }
+  #talks ._admin  { background-image: url('icon/_admin.png'); }
+  /* !end icon styles */
+
+  /* !begin balloon styles */
+  #talks .blue       { background-image: url('balloon/blue.png'); }
+  #talks .gray       { background-image: url('balloon/gray.png'); }
+  #talks .green      { background-image: url('balloon/green.png'); }
+  #talks .orange     { background-image: url('balloon/orange.png'); }
+  #talks .pink       { background-image: url('balloon/pink.png'); }
+  #talks .red        { background-image: url('balloon/red.png'); }
+  #talks .purple     { background-image: url('balloon/purple.png'); }
+  #talks .brown      { background-image: url('balloon/brown.png'); }
+  #talks .cobalt     { background-image: url('balloon/cobalt.png'); }
+  #talks .strawberry { background-image: url('balloon/strawberry.png'); }
+  #talks .yellow     { background-image: url('balloon/yellow.png'); }
+  #talks .carrot     { background-image: url('balloon/carrot.png'); }
+  /* !begin balloon styles */

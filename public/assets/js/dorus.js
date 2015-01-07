@@ -70,15 +70,20 @@
     };
 
     Login.login = function(username, password, success, error) {
-      return $.get("./login/", {
+      return $.get("./session", {
         username: username,
         password: password
       }, (function(_this) {
         return function(data) {
-          if (data === "logged in") {
-            return success();
+          console.log(data);
+          if (data === "logged in" || data === "logged again") {
+            if (success) {
+              return success();
+            }
           } else {
-            return error();
+            if (error) {
+              return error();
+            }
           }
         };
       })(this));
