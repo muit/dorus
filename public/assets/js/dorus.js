@@ -34,6 +34,34 @@
 
   })();
 
+  Dollars.Chat.User = (function() {
+    function User(name, icon) {
+      this.name = name;
+    }
+
+    User.icons = {
+      bakyura: {
+        icon: "icon/bakyura.png",
+        color: ""
+      },
+      setton: {
+        icon: "icon/setton.png",
+        color: ""
+      },
+      tanaka: {
+        icon: "icon/tanaka.png",
+        color: ""
+      },
+      woman: {
+        icon: "icon/woman.png",
+        color: ""
+      }
+    };
+
+    return User;
+
+  })();
+
   Dollars.Login = (function() {
     function Login() {}
 
