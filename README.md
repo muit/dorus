@@ -1,7 +1,34 @@
-# ClipJump
+# Dorus
+Simple chat application.
 
-Simple voxel based inteligence game.
-Can be used also as a voxel engine.
+### Config example
+Put this on "source/server/config.coffee"
+```coffeescript
+Config={
+	env:"development",
+	server:{
+		home:"index.html",
+		directory:"./public",
+		debug: true,
+		log: true,
+		secure: false,
+		session:{
+			enabled: true,
+			persistence: true,
+			lifetime: 3600,
+			new_session_url:"/session",
+			global_path: true
+		}
+	},
+
+	#Redis config
+	redis:{
+		url:"",
+		port:6379,
+		auth:""
+	}
+}
+```
 
 ### Pull Requests
 
@@ -23,7 +50,7 @@ Please ensure that:
 
 The MIT License (MIT)
 
-Copyright (c) 2014-2015 [@muitxer](https://twitter.com/muitxer) - [Miguel Fernandez(muit)](https://github.com/muit)
+Copyright (c) 2014-2015 [@muitxer](https://twitter.com/muitxer) - [Miguel Fernandez](https://github.com/muit)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

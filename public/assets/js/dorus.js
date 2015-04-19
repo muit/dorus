@@ -35,8 +35,8 @@
   })();
 
   Dollars.Chat.User = (function() {
-    function User(name, icon) {
-      this.name = name;
+    function User(name1, icon) {
+      this.name = name1;
     }
 
     User.icons = {
